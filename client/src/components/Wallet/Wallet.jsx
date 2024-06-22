@@ -58,7 +58,7 @@ const Wallet =({saveState})=>{
         await window.ethereum.request({method:'eth_requestAccounts'});
         const contract = new web3.eth.Contract(
             ABI,
-            "0xDB3bC2db77A1AD99A478283eC4aaFA48e6b62Ab8"
+            "0x080664B7F6F18b5Df9D54816be8C4eFB1fe057A3"
         );
          setConnected(false);
          saveState({web3:web3,contract:contract});
